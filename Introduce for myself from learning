@@ -8,5 +8,6 @@ void sched_run_ms(void) need to be placed in while(1), only in this way,task and
 
 void sched_register_ms(sched_func fn, void *arg, uint32_t period_ms) is link function with a storage，run intermittently for ten seconds ,be used upon while(1)
 
+(0xffffffff&(sched_ptr->sched_list[i].last_tick + sched_ptr->sched_list[i].period)   ，last_tick = last_jiffies , + period can achieve certain tasks within a certain amount of time.
 
-
+sched_entry.sched_list[sched_entry.used++].arg     = arg;	,used++ can achieve link different task to be linked to the corresponding address
