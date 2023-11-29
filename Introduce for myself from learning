@@ -2,7 +2,7 @@ Introduce for myself from learning
 
 void sched_init(void) must be used in Init part
 
-void sched_update(void) need to be placed in a part ,this part can be void SysTick_Handler(void)
+void sched_update(void) need to be placed in a part ,this part can be void SysTick_Handler(void), jiffies is beating like a heart
 
 void sched_run_ms(void) need to be placed in while(1), only in this way,task and function can run normally
 
